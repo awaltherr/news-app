@@ -6,8 +6,8 @@ export const NewsSectionContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-width: 600px;
-  background-color: #fff2d8;
+  min-width: 500px;
+  background-color: #eaeccc;
 `;
 
 export const ArticlesSection = styled.div`
@@ -15,7 +15,7 @@ export const ArticlesSection = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 60px;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 150px;
   margin-bottom: 80px;
 
   @media (max-width: 1780px) {
@@ -50,7 +50,7 @@ export const ArticleSectionCardImg = styled.img`
   height: 300px;
   border: 1px solid #000000;
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   background-size: cover;
   background-position: cover;
 
@@ -65,8 +65,8 @@ export const ArticleSectionCardImg = styled.img`
 
 export const ArticleSectionCardTitle = styled.div`
   font-size: 25px;
-  font-family: "Roboto", sans-serif;
-  margin-bottom: 20px;
+  font-family: "Libre Baskerville", serif;
+  margin-bottom: 30px;
 `;
 
 export const TitleLink = styled(Link)`
@@ -75,9 +75,9 @@ export const TitleLink = styled(Link)`
 `;
 
 export const ArticleSectionCardDesc = styled.div`
-  font-family: "Roboto", sans-serif;
+  font-family: "Signika Negative", sans-serif;
 `;
 
 export const ArticleSectionCardPublishDay = styled.div`
-  font-family: "Roboto", sans-serif;
+  font-family: "Signika Negative", sans-serif;
 `;
