@@ -1,7 +1,9 @@
-export default function About() {
+import { AboutContainer } from "../styles/About.styled";
+
+export default function Contact() {
   return (
-    <div>
+    <AboutContainer>
       <h1>About</h1>
-    </div>
+    </AboutContainer>
   );
 }

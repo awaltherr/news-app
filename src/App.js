@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 import NewsSection from "./components/NewsSection";
 import About from "./components/About";
-import Contact from "./components/About";
+import Contact from "./components/Contact";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
