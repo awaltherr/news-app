@@ -5,6 +5,9 @@ import {
   InputField,
   TextArea,
   ContactSubmitBtn,
+  ErrorList,
+  ErrorMessage,
+  SuccessMessage,
 } from "../styles/Contact.styled";
 
 export default function Contact() {
@@ -118,14 +121,14 @@ export default function Contact() {
       </InputGroup>
       <ContactSubmitBtn type="submit">Submit</ContactSubmitBtn>
       {Object.keys(contactErrors).length > 0 && (
-        <ul className="errorList">
+        <ErrorList>
           {Object.values(contactErrors).map((error, index) => (
-            <li key={index}>{error}</li>
+            <ErrorMessage key={index}>{error}</ErrorMessage>
           ))}
-        </ul>
+        </ErrorList>
       )}
       {successSubmit && (
-        <span className="successSubmit">Thank you for your message</span>
+        <SuccessMessage>Thank you for your message!</SuccessMessage>
       )}
     </ContactContainer>
   );
