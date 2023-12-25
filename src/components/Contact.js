@@ -87,7 +87,7 @@ export default function Contact() {
         <InputField
           type="text"
           name="firstname"
-          placeholder="First name*"
+          placeholder="First name *"
           onChange={handleChange}
           value={contactInputs.firstname}
         />
@@ -96,7 +96,7 @@ export default function Contact() {
         <InputField
           type="text"
           name="lastname"
-          placeholder="Last name*"
+          placeholder="Last name *"
           onChange={handleChange}
           value={contactInputs.lastname}
         />
@@ -105,7 +105,7 @@ export default function Contact() {
         <InputField
           type="text"
           name="email"
-          placeholder="Email*"
+          placeholder="Email *"
           onChange={handleChange}
           value={contactInputs.email}
         />
@@ -114,7 +114,7 @@ export default function Contact() {
         <TextArea
           name="message"
           rows="12"
-          placeholder="Message*"
+          placeholder="Message *"
           onChange={handleChange}
           value={contactInputs.message}
         />
