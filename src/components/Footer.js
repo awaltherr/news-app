@@ -7,6 +7,8 @@ import {
   InfoGroupFooter,
   RightFooterContainer,
 } from "../styles/Footer.styled";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMapMarkerAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function Contact() {
   return (
@@ -20,8 +22,12 @@ export default function Contact() {
         </FooterLinksContainer>
       </LeftFooterContainer>
       <MiddleFooterContainer>
-        <InfoGroupFooter>&#x1F4CD; Gothenburg, Sweden</InfoGroupFooter>
-        <InfoGroupFooter>&#x2709; dailyintel@news.com</InfoGroupFooter>
+        <InfoGroupFooter>
+          <FontAwesomeIcon icon={faMapMarkerAlt} /> Gothenburg, Sweden
+        </InfoGroupFooter>
+        <InfoGroupFooter>
+          <FontAwesomeIcon icon={faEnvelope} /> dailyintel@news.com
+        </InfoGroupFooter>
       </MiddleFooterContainer>
       <RightFooterContainer>
         <span>About the application</span>
