@@ -9,6 +9,7 @@ import {
   ArticleSectionCardDesc,
   ArticleSectionCardPublishDay,
 } from "../styles/NewsSection.styled";
+import HeroBanner from "./HeroBanner";
 
 const ARTICLE_WITHOUT_IMG = "/assets/dummy-image-green.jpg";
 const API_KEY = "fbb9dd1644284a738773c2390f6b4a08";
@@ -48,6 +49,7 @@ export default function NewsSection({ articles, setArticles }) {
 
   return (
     <>
+      <HeroBanner text="We're glad you're here. Together, we can explore the fascinating world of news." />
       <NewsSectionContainer>
         <ArticlesSection>
           {articles.map((article, index) => (

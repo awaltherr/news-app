@@ -15,7 +15,7 @@ export const ArticlesSection = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 60px;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 50px;
   margin-bottom: 80px;
 
   @media (max-width: 1780px) {

@@ -9,6 +9,7 @@ import {
   ErrorMessage,
   SuccessMessage,
 } from "../styles/Contact.styled";
+import HeroBanner from "./HeroBanner";
 
 export default function Contact() {
   const [contactInputs, setContactInputs] = useState({
@@ -82,54 +83,57 @@ export default function Contact() {
   }, [contactSubmit, contactInputs]);
 
   return (
-    <ContactContainer onSubmit={handleSubmit}>
-      <InputGroup>
-        <InputField
-          type="text"
-          name="firstname"
-          placeholder="First name *"
-          onChange={handleChange}
-          value={contactInputs.firstname}
-        />
-      </InputGroup>
-      <InputGroup>
-        <InputField
-          type="text"
-          name="lastname"
-          placeholder="Last name *"
-          onChange={handleChange}
-          value={contactInputs.lastname}
-        />
-      </InputGroup>
-      <InputGroup>
-        <InputField
-          type="text"
-          name="email"
-          placeholder="Email *"
-          onChange={handleChange}
-          value={contactInputs.email}
-        />
-      </InputGroup>
-      <InputGroup>
-        <TextArea
-          name="message"
-          rows="12"
-          placeholder="Message *"
-          onChange={handleChange}
-          value={contactInputs.message}
-        />
-      </InputGroup>
-      <ContactSubmitBtn type="submit">Submit</ContactSubmitBtn>
-      {Object.keys(contactErrors).length > 0 && (
-        <ErrorList>
-          {Object.values(contactErrors).map((error, index) => (
-            <ErrorMessage key={index}>{error}</ErrorMessage>
-          ))}
-        </ErrorList>
-      )}
-      {successSubmit && (
-        <SuccessMessage>Thank you for your message!</SuccessMessage>
-      )}
-    </ContactContainer>
+    <>
+      <HeroBanner text="Get in touch!" />
+      <ContactContainer onSubmit={handleSubmit}>
+        <InputGroup>
+          <InputField
+            type="text"
+            name="firstname"
+            placeholder="First name *"
+            onChange={handleChange}
+            value={contactInputs.firstname}
+          />
+        </InputGroup>
+        <InputGroup>
+          <InputField
+            type="text"
+            name="lastname"
+            placeholder="Last name *"
+            onChange={handleChange}
+            value={contactInputs.lastname}
+          />
+        </InputGroup>
+        <InputGroup>
+          <InputField
+            type="text"
+            name="email"
+            placeholder="Email *"
+            onChange={handleChange}
+            value={contactInputs.email}
+          />
+        </InputGroup>
+        <InputGroup>
+          <TextArea
+            name="message"
+            rows="12"
+            placeholder="Message *"
+            onChange={handleChange}
+            value={contactInputs.message}
+          />
+        </InputGroup>
+        <ContactSubmitBtn type="submit">Submit</ContactSubmitBtn>
+        {Object.keys(contactErrors).length > 0 && (
+          <ErrorList>
+            {Object.values(contactErrors).map((error, index) => (
+              <ErrorMessage key={index}>{error}</ErrorMessage>
+            ))}
+          </ErrorList>
+        )}
+        {successSubmit && (
+          <SuccessMessage>Thank you for your message!</SuccessMessage>
+        )}
+      </ContactContainer>
+    </>
   );
 }

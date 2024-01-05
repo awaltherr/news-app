@@ -10,7 +10,8 @@ const inputStyle = `
 `;
 
 export const ContactContainer = styled.form`
-  padding-top: 200px;
+  padding-top: 80px;
+  padding-bottom: 100px;
   width: 90%;
   max-width: 600px;
   margin: 0 auto;
